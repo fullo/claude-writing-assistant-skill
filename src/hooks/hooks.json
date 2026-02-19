@@ -1,0 +1,14 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "Il file che sta per essere scritto/modificato è un file .md dentro una directory manuscript/ o contiene contenuto destinato a LeanPub/Markua? Se sì, verifica rapidamente:\n\n1. I callout usano le label canoniche: T> **Insight** / **Regola pratica** / **Approfondimento**, W> **Red Flag** (F maiuscola), Q> **Domanda Socratica**\n2. Nessuna emoji nelle label o nei titoli\n3. I titoli sono in sentence case\n4. I trattini nei titoli/sottotitoli sono trattini lunghi (—) non corti (-)\n5. I Quick Win sono in {blurb, icon: trophy} con label bold (non ##)\n\nSe il file NON è un file Markua/manuscript, approva senza commenti.\nSe trovi violazioni, segnala brevemente cosa correggere prima di procedere.",
+          "timeout": 15
+        }
+      ]
+    }
+  ]
+}
