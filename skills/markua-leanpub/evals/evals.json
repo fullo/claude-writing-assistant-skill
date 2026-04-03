@@ -1,0 +1,17 @@
+[
+  {
+    "name": "detect-wrong-callout-label",
+    "prompt": "Check this Markua file for formatting issues:\n\nW> **red flag**\nW>\nW> This metric is misleading.\n\nIs the callout correctly formatted?",
+    "expected_behavior": "Should detect that 'red flag' must be capitalized as 'Red Flag' (capital F) per the canonical Markua format rules."
+  },
+  {
+    "name": "detect-missing-pagebreak",
+    "prompt": "Validate this Markua section transition:\n\n## 3.1 Titolo prima sezione\n\nContent here.\n\n## 3.2 Titolo seconda sezione\n\nMore content.",
+    "expected_behavior": "Should flag the missing {pagebreak} before ## 3.2. Every ## section except the first in a chapter must be preceded by {pagebreak}."
+  },
+  {
+    "name": "detect-emoji-in-callout",
+    "prompt": "Check this callout:\n\nT> **💡 Insight**\nT>\nT> This is an important point.\n\nIs this valid Markua?",
+    "expected_behavior": "Should flag the emoji in the callout label. Markua callout labels must not contain emoji — the correct format is T> **Insight** without any emoji."
+  }
+]

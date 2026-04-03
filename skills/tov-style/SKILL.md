@@ -1,11 +1,14 @@
 ---
 name: tov-style
 description: >
-  Questa skill va usata quando l'utente chiede di "rivedere il tono", "controllare lo stile",
+  Use when the user asks to review tone of voice, check writing style, verify Italian grammar
+  and quality, apply editorial standards, or ensure consistent register across a manuscript.
+  Also trigger when the user mentions proofreading Italian text, checking formality level, or
+  reviewing writing for publication readiness.
+  Attivare anche quando l'utente chiede di "rivedere il tono", "controllare lo stile",
   "verificare la qualità della scrittura", "controllare la grammatica italiana",
-  "valutare il capitolo", "review editoriale", "scorecard di qualità",
-  "validare il TOV", oppure quando sta scrivendo o modificando contenuto per la serie "the Right Way".
-version: 0.1.0
+  "valutare il capitolo", "review editoriale", "scorecard di qualità", "validare il TOV".
+version: 1.0.0
 ---
 
 # TOV & Stile di Scrittura — Serie "the Right Way"
@@ -65,6 +68,12 @@ Rapporto target: **30% teoria / 70% pratica**. In un capitolo di 400 righe, max 
 ## Dialoghi
 
 I dialoghi tra personaggi del caso studio sono il principale veicolo del tono conversazionale. Regole: emergono dal contesto (non artificiali), personaggi difendono posizioni diverse, il dialogo rivela il problema e la prosa lo analizza, max 4–5 battute consecutive senza commento narrativo.
+
+## Gotchas
+
+- **Italian formal register varies by region**: Northern Italian business writing tends to be more concise; Southern more elaborate. Ask which style the author targets before applying corrections.
+- **"Tu" vs "Voi" vs "Lei"**: Italian technical books typically use "tu" (informal) or passive constructions. "Lei" (formal) is unusual in tech books but standard in business writing. Check the book's existing convention before suggesting changes.
+- **Anglicisms are acceptable in Italian tech writing**: Words like "skill", "feedback", "deploy" are standard in Italian tech books. Do not suggest Italian alternatives for established tech anglicisms unless the author explicitly requests it.
 
 ## Risorse dettagliate
 

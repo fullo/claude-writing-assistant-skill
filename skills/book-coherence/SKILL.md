@@ -1,12 +1,14 @@
 ---
 name: book-coherence
 description: >
-  Questa skill va usata quando l'utente chiede di "controllare la coerenza",
-  "verificare la continuità narrativa", "controllare i numeri del caso studio",
-  "cross-check tra capitoli", "verificare la timeline", "controllare i personaggi",
-  "confrontare con l'altro libro", "check cross-reference", "verificare terminologia tra libri",
-  oppure quando si lavora su coerenza intra-libro o inter-libro nella serie "the Right Way".
-version: 0.1.0
+  Use when the user asks to check coherence, verify narrative continuity, validate case study
+  numbers, cross-reference chapters, or ensure consistency across multiple books in a series.
+  Also trigger when editing multi-chapter content and the user mentions checking references,
+  terminology, or timeline consistency across the manuscript.
+  Attivare anche quando l'utente chiede di "controllare la coerenza", "verificare la continuità
+  narrativa", "controllare i numeri del caso studio", "cross-check tra capitoli",
+  "verificare la timeline", "confrontare con l'altro libro", "verificare terminologia tra libri".
+version: 1.0.0
 ---
 
 # Coerenza Narrativa — Intra-libro e Inter-libro
@@ -146,6 +148,12 @@ Terminologia:
 - [Libro A, Cap N] usa "XYZ" — [Libro B, Cap M] usa "ABC" per lo stesso concetto
   → Proposta: uniformare a "XYZ" perché...
 ```
+
+## Gotchas
+
+- **Cross-book references can be stale**: When updating one book in a series, cross-references in other books may become invalid. Always check all books in the series, not just the one being edited.
+- **Case study numbers must be internally consistent**: A case study mentioned in Chapter 2 with "30% improvement" cannot appear in Chapter 7 as "25% improvement." Extract all numeric claims and cross-check.
+- **Chapter order may differ from writing order**: Authors don't always write linearly. Check the book config (Book.txt or equivalent) for canonical order before validating continuity.
 
 ## Risorse dettagliate
 

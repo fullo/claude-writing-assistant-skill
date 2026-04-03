@@ -1,0 +1,17 @@
+[
+  {
+    "name": "detect-forbidden-anglicism",
+    "prompt": "Review this Italian sentence for style: 'Dobbiamo deployare la nuova feature prima di schedulare il meeting con il team.'",
+    "expected_behavior": "Should flag 'deployare' (use 'rilasciare') and 'schedulare' (use 'programmare/pianificare') as forbidden anglicisms, while accepting 'feature', 'meeting', and 'team' as established tech terms."
+  },
+  {
+    "name": "detect-bullet-list-abuse",
+    "prompt": "Review this chapter section for TOV compliance:\n\n## 3.2 Come scegliere gli OKR\n\n- Gli OKR devono essere ambiziosi\n- Gli OKR devono essere misurabili\n- Gli OKR devono essere time-boxed\n- Gli OKR devono essere allineati alla strategia",
+    "expected_behavior": "Should flag this as a narrative explanation incorrectly formatted as a bullet list. The content should be converted to continuous prose explaining the 'why' behind each point."
+  },
+  {
+    "name": "detect-condescending-tone",
+    "prompt": "Review this paragraph for tone of voice: 'Come sicuramente saprai, gli OKR sono uno strumento molto semplice che tutti possono capire facilmente. Basta seguire queste poche regole elementari.'",
+    "expected_behavior": "Should flag the condescending tone: 'come sicuramente saprai' is patronizing, 'molto semplice' and 'elementari' underestimate the reader. The target reader is a professional — the tone should be peer-to-peer, not teacher-to-student."
+  }
+]

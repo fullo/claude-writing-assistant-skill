@@ -1,11 +1,14 @@
 ---
 name: markua-leanpub
 description: >
-  Questa skill va usata quando l'utente chiede di "verificare il formato Markua",
-  "controllare la formattazione LeanPub", "validare i callout", "controllare i pagebreak",
-  "audit Markua", "formattare il capitolo", "fix formatting", "check blurb",
-  oppure quando si scrive o modifica un file .md destinato a LeanPub.
-version: 0.1.0
+  Use when the user asks to verify Markua format, check LeanPub formatting, validate
+  callouts/pagebreaks/asides, convert content to Markua, or prepare a manuscript for LeanPub
+  publishing. Also trigger when the user mentions formatting a book, manuscript structure, or
+  publishing to LeanPub.
+  Attivare anche quando l'utente chiede di "verificare il formato Markua", "controllare la
+  formattazione LeanPub", "validare i callout", "controllare i pagebreak", "audit Markua",
+  "formattare il capitolo", "fix formatting", "check blurb".
+version: 1.0.0
 ---
 
 # Formato Markua — Regole di Formattazione LeanPub
@@ -93,6 +96,12 @@ Senza language tag. Larghezza max raccomandata: ~50 caratteri per compatibilità
 - **Sentence case** per tutti i titoli.
 - **Trattino lungo (—)** ovunque, mai trattino corto (-) nei titoli/sottotitoli.
 - Tutti i callout seguono il pattern: label in bold → riga vuota con prefisso → contenuto.
+
+## Gotchas
+
+- **Markua is NOT standard Markdown**: Markua extends Markdown with specific syntax (callouts, asides, pagebreaks, attributes). Standard Markdown linters will flag valid Markua as errors.
+- **LeanPub preview can differ from final**: Formatting that looks correct in the LeanPub preview may render differently in PDF vs EPUB vs web. Always test all three output formats.
+- **Image paths are relative to manuscript/**: LeanPub expects images in the `manuscript/images/` directory. Paths in the Markua source must be relative to `manuscript/`, not the project root.
 
 ## Risorse dettagliate
 

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "detect-timeline-inconsistency",
+    "prompt": "Check this manuscript for coherence. In Chapter 3, the company was founded in 2019. In Chapter 7, it says the company was founded in 2018. Find the inconsistency.",
+    "expected_behavior": "Should detect the conflicting founding year between Chapter 3 (2019) and Chapter 7 (2018) and propose unifying to one date."
+  },
+  {
+    "name": "detect-cross-reference-error",
+    "prompt": "Verify cross-references: Chapter 5 says '(vedi Capitolo 3)' for OKR alignment, but Chapter 3 covers team building, not OKR alignment.",
+    "expected_behavior": "Should flag the incorrect cross-reference and suggest the correct chapter that actually covers OKR alignment."
+  },
+  {
+    "name": "detect-character-role-change",
+    "prompt": "In Chapter 2, Marco is introduced as CTO. In Chapter 8, Marco is referred to as VP Engineering without any explanation of a role change. Check character consistency.",
+    "expected_behavior": "Should detect the unexplained role change for Marco between chapters and flag it as a coherence issue requiring either correction or narrative justification."
+  }
+]

@@ -1,9 +1,0 @@
-{
-  "name": "book-writing-assistant",
-  "version": "0.1.0",
-  "description": "Assistente editoriale per la serie 'the Right Way': TOV, grammatica italiana, formato Markua/LeanPub, coerenza narrativa multi-libro",
-  "author": {
-    "name": "Francesco Fullone — Daruma Consulting"
-  },
-  "keywords": ["writing", "books", "markua", "leanpub", "italian", "editorial", "tov"]
-}
