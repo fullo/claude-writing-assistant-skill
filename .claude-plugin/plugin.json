@@ -1,14 +1,7 @@
 {
   "name": "writing-assistant",
-  "version": "1.0.0",
   "description": "Editorial assistant for book writing — Italian TOV/style checking, Markua/LeanPub formatting, multi-book coherence validation, and narrative consistency.",
   "author": {
     "name": "Francesco Fullone — Daruma Consulting"
-  },
-  "repository": "https://github.com/fullo/claude-writing-assistant-skill",
-  "license": "MIT",
-  "keywords": ["writing", "books", "markua", "leanpub", "italian", "editorial", "tov", "coherence"],
-  "skills": "./skills/",
-  "agents": "./agents/",
-  "hooks": "./hooks/hooks.json"
+  }
 }
