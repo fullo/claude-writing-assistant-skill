@@ -13,7 +13,7 @@ version: 1.0.0
 
 # Formato Markua — Regole di Formattazione LeanPub
 
-**Prerequisito:** questa skill si applica solo a progetti con `Piattaforma: LeanPub (Markua)` in `book-config.md`. Se la piattaforma configurata e diversa, informare l'utente che le regole dettagliate sono disponibili solo per Markua e offrire best practice Markdown generiche.
+**Prerequisito:** questa skill si applica solo a progetti con `Piattaforma: LeanPub (Markua)` in `book-config.md`. Se la piattaforma configurata è diversa, informare l'utente che le regole dettagliate sono disponibili solo per Markua e offrire best practice Markdown generiche.
 
 Se `book-config.md` non esiste o non specifica la piattaforma, assumere LeanPub/Markua come default.
 

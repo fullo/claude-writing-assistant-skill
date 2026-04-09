@@ -10,7 +10,7 @@ Gestisci le fonti di riferimento per il libro corrente. Le fonti vengono salvate
 
 ```
 nome-libro/
-├── capitoli/          ← manuscript LeanPub
+├── capitoli/          ← manuscript (LeanPub o altra piattaforma)
 ├── fonti/             ← fonti di riferimento
 │   ├── fonti.md       ← indice fonti
 │   ├── documento.pdf
@@ -75,11 +75,12 @@ Per verificare lo stato di integrazione, cercare nel testo dei capitoli in `capi
 
 ## Integrazione nel testo
 
-Quando l'utente chiede di integrare una fonte nel testo, leggere la fonte dalla directory `fonti/`, estrarre i concetti rilevanti per il capitolo indicato, e proporre inserimenti che rispettino:
-- Il TOV della serie (leggere `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/SKILL.md`)
+Quando l'utente chiede di integrare una fonte nel testo, leggere prima `book-config.md` per determinare **Lingua** e **Piattaforma** del progetto. Poi leggere la fonte dalla directory `fonti/`, estrarre i concetti rilevanti per il capitolo indicato, e proporre inserimenti che rispettino:
+- Il TOV e la lingua del libro (leggere `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/SKILL.md` — la skill caricherà il language pack appropriato)
 - L'integrità dei dati (ogni dato numerico tracciabile alla fonte)
-- Il formato Markua (leggere `${CLAUDE_PLUGIN_ROOT}/skills/markua-leanpub/SKILL.md`)
+- Il formato della piattaforma configurata (se LeanPub/Markua: leggere `${CLAUDE_PLUGIN_ROOT}/skills/markua-leanpub/SKILL.md`; altrimenti: best practice Markdown)
 - L'attribuzione esplicita: "secondo [nome organizzazione/studio]"
+- Modi di dire ed espressioni idiomatiche naturali della lingua target
 
 ## Git commit
 

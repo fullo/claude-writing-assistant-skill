@@ -71,8 +71,8 @@ Formato di output:
 ```
 
 ```
-PUNTEGGIO DI CONFORMITA: __/100
-REGOLE PIU VIOLATE: R__, R__, R__
+PUNTEGGIO DI CONFORMITÀ: __/100
+REGOLE PIÙ VIOLATE: R__, R__, R__
 RIEPILOGO: __ violazioni trovate su __ regole diverse.
 ```
 

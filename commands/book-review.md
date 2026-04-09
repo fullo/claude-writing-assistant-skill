@@ -15,14 +15,14 @@ Leggere `book-config.md` nella root del progetto per determinare:
 
 Caricare le skill di riferimento:
 - `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/SKILL.md` per il TOV e lo stile
-- Regole grammaticali: `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/references/{lang}/grammar-rules.md` (dove {lang} e la lingua da book-config.md). Se il pack non esiste, usare `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/references/grammar-framework.md`
+- Regole grammaticali: `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/references/{lang}/grammar-rules.md` (dove {lang} è la lingua da book-config.md). Se il pack non esiste, usare `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/references/grammar-framework.md`
 - `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/references/scorecard.md` per la scorecard
 - `${CLAUDE_PLUGIN_ROOT}/skills/tov-style/references/editorial-principles.md` per i principi editoriali (King, Zinsser, Strunk & White, Lamott)
-- Se piattaforma e LeanPub/Markua: `${CLAUDE_PLUGIN_ROOT}/skills/markua-leanpub/SKILL.md` per le regole formato
+- Se piattaforma è LeanPub/Markua: `${CLAUDE_PLUGIN_ROOT}/skills/markua-leanpub/SKILL.md` per le regole formato
 
 Eseguire nell'ordine:
 
-**1. Scorecard di qualita (7 dimensioni, punteggio 0–10 ciascuna)**
+**1. Scorecard di qualità (7 dimensioni, punteggio 0–10 ciascuna)**
 Compilare la scorecard completa. Obiettivo: >= 60/70.
 
 **2. Validazione grammaticale e stilistica**
@@ -32,10 +32,10 @@ Verificare il capitolo contro le regole del language pack della lingua configura
   → Correzione: "testo corretto"
 ```
 Generare correzioni con modi di dire e espressioni idiomatiche naturali della lingua target.
-Concludere con punteggio di conformita /100.
+Concludere con punteggio di conformità /100.
 
 **3. Validazione formato**
-Se la piattaforma e LeanPub/Markua: controllare tutti gli elementi formali (epigrafe, separatore, sezioni, pagebreak, callout, Quick Win, Checkpoint). Se altra piattaforma: applicare best practice Markdown generiche.
+Se la piattaforma è LeanPub/Markua: controllare tutti gli elementi formali (epigrafe, separatore, sezioni, pagebreak, callout, Quick Win, Checkpoint). Se altra piattaforma: applicare best practice Markdown generiche.
 
 **4. Check contenuto**
 - Rapporto teoria/pratica (target da book-config.md, default 30/70)
@@ -46,7 +46,7 @@ Se la piattaforma e LeanPub/Markua: controllare tutti gli elementi formali (epig
 **5. Riepilogo finale**
 Presentare (nella lingua del libro):
 - Scorecard compilata
-- Punteggio conformita grammaticale /100
+- Punteggio conformità grammaticale /100
 - Top 5 interventi prioritari con riga e proposta di correzione
 - Giudizio complessivo: pronto per pubblicazione / necessita revisione mirata / necessita revisione approfondita
 

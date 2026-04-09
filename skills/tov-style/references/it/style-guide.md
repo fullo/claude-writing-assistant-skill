@@ -1,6 +1,6 @@
-# Guida di Stile Completa — Serie "the Right Way"
+# Guida di Stile Completa — Italiano Tecnico-Divulgativo
 
-## Principi fondanti della serie
+## Principi fondanti
 
 1. Ogni libro è una guida pratica, non un manuale teorico
 2. Training from the Back of the Room: il lettore fa prima di ascoltare teoria

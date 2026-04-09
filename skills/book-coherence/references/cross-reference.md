@@ -1,6 +1,6 @@
 # Cross-Reference della Serie — Regole e Mappa
 
-Questo file e il **riferimento unico a livello serie** per gestire i rimandi incrociati tra i volumi di una collana. Vive nella root della serie (es. `libri/cross-reference.md`) ed è condiviso da tutti i libri.
+Questo file è il **riferimento unico a livello serie** per gestire i rimandi incrociati tra i volumi di una collana. Vive nella root della serie (es. `libri/cross-reference.md`) ed è condiviso da tutti i libri.
 
 Ha due scopi:
 
@@ -108,7 +108,7 @@ Il file `cross-reference.md` a livello serie viene generato e aggiornato automat
 ### 2.1 Intestazione
 
 ```markdown
-# Cross-Reference — Serie "the Right Way"
+# Cross-Reference — Serie "[nome serie da book-config.md]"
 
 Ultimo aggiornamento: [data]
 Volumi censiti: [elenco titoli]

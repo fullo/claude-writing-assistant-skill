@@ -4,13 +4,13 @@ Principi editoriali universali estratti dai testi di riferimento per la scrittur
 
 ---
 
-## 1. Chiarezza e semplicita (Zinsser, Strunk & White)
+## 1. Chiarezza e semplicità (Zinsser, Strunk & White)
 
-**Principio:** ogni parola deve guadagnarsi il suo posto nel testo. Tagliare tutto cio che non aggiunge significato.
+**Principio:** ogni parola deve guadagnarsi il suo posto nel testo. Tagliare tutto ciò che non aggiunge significato.
 
 **Cosa verificare:**
-- Aggettivi e avverbi superflui (King: "la strada per l'inferno e lastricata di avverbi")
-- Perifrasi e ridondanze ("al fine di" → "per", "a causa del fatto che" → "perche")
+- Aggettivi e avverbi superflui (King: "la strada per l'inferno è lastricata di avverbi")
+- Perifrasi e ridondanze ("al fine di" → "per", "a causa del fatto che" → "perché")
 - Voce passiva non necessaria (preferire la voce attiva)
 - Parole vaghe al posto di parole specifiche e concrete
 - Frasi che possono essere dette con meno parole senza perdere significato
@@ -27,9 +27,9 @@ Principi editoriali universali estratti dai testi di riferimento per la scrittur
 - Esempi specifici vs. generalizzazioni
 - Numeri e dati concreti vs. affermazioni generiche ("miglioramento significativo" → "aumento del 23%")
 
-**Per libri tecnici/non-fiction:** mostrare significa usare casi studio reali, dialoghi tra personaggi, situazioni concrete. Non solo "il framework X e utile" ma "quando il team di Marco ha applicato X, il risultato e stato Y".
+**Per libri tecnici/non-fiction:** mostrare significa usare casi studio reali, dialoghi tra personaggi, situazioni concrete. Non solo "il framework X è utile" ma "quando il team di Marco ha applicato X, il risultato è stato Y".
 
-## 3. La prima bozza e per scoprire (King, Lamott)
+## 3. La prima bozza è per scoprire (King, Lamott)
 
 **Principio:** la prima bozza serve a capire cosa vuoi dire. La revisione serve a dirlo bene.
 
@@ -38,47 +38,47 @@ Principi editoriali universali estratti dai testi di riferimento per la scrittur
 - Problemi di stile (da raffinare in revisione)
 - Problemi di formattazione (da correggere alla fine)
 
-**Per il challenger:** la fase di revisione e il momento giusto per sfidare le scelte dell'autore. Non durante la prima bozza.
+**Per il challenger:** la fase di revisione è il momento giusto per sfidare le scelte dell'autore. Non durante la prima bozza.
 
-## 4. Identita e voce (Zinsser)
+## 4. Identità e voce (Zinsser)
 
-**Principio:** la voce dell'autore e la qualita piu riconoscibile per il lettore. Non imitare, non omologarsi.
+**Principio:** la voce dell'autore è la qualità più riconoscibile per il lettore. Non imitare, non omologarsi.
 
 **Cosa verificare:**
-- La voce e coerente in tutto il libro?
+- La voce è coerente in tutto il libro?
 - L'autore ha un tono riconoscibile e personale?
 - Il testo suona come una persona reale che parla, non come un comitato?
 - I passaggi "generici" (che potrebbe aver scritto chiunque) sono pochi?
 
-**Zinsser:** chiarita, semplicita, brevita e umanita. L'umanita e il quarto pilastro — il lettore deve sentire una persona dietro le parole.
+**Zinsser:** chiarità, semplicità, brevità e umanità. L'umanità è il quarto pilastro — il lettore deve sentire una persona dietro le parole.
 
 ## 5. Struttura in tre atti (universale)
 
-**Principio:** ogni unita narrativa (libro, capitolo, sezione) ha bisogno di un inizio, uno sviluppo e una conclusione.
+**Principio:** ogni unità narrativa (libro, capitolo, sezione) ha bisogno di un inizio, uno sviluppo e una conclusione.
 
 **Struttura classica:**
 1. **Setup** — contesto, personaggi, situazione di partenza
 2. **Confronto** — problema, conflitto, complicazione, tensione
 3. **Risoluzione** — soluzione, trasformazione, lezione appresa
 
-**Per libri tecnici:** il pattern Esperienza → Problema → Soluzione → Esercizio e una variante della struttura in tre atti.
+**Per libri tecnici:** il pattern Esperienza → Problema → Soluzione → Esercizio è una variante della struttura in tre atti.
 
 **Cosa verificare:**
 - Ogni capitolo ha un arco narrativo completo?
 - Il lettore sa sempre "dove si trova" nella struttura?
-- C'e un senso di progressione (non solo una lista di concetti)?
+- C'è un senso di progressione (non solo una lista di concetti)?
 
-## 6. Bird by bird — scomporre la complessita (Lamott)
+## 6. Bird by bird — scomporre la complessità (Lamott)
 
 **Principio:** affrontare un progetto grande scomponendolo in pezzi piccoli e gestibili.
 
-**Per il reviewer:** quando un capitolo e troppo lungo o troppo denso, suggerire di scomporlo. Un capitolo che cerca di coprire troppo non copre nulla bene.
+**Per il reviewer:** quando un capitolo è troppo lungo o troppo denso, suggerire di scomporlo. Un capitolo che cerca di coprire troppo non copre nulla bene.
 
-**Per il challenger:** "Qual e l'unica cosa che questo capitolo deve insegnare? Se dovessi togliere tutto tranne una cosa, cosa terresti?"
+**Per il challenger:** "Qual è l'unica cosa che questo capitolo deve insegnare? Se dovessi togliere tutto tranne una cosa, cosa terresti?"
 
 ## 7. Dialogo come rivelazione (King, Lamott)
 
-**Principio:** il dialogo non e una riproduzione letterale del parlato. E uno strumento narrativo che rivela carattere, conflitto e informazione.
+**Principio:** il dialogo non è una riproduzione letterale del parlato. È uno strumento narrativo che rivela carattere, conflitto e informazione.
 
 **Cosa verificare:**
 - I dialoghi fanno avanzare la storia o rivelano qualcosa sui personaggi?
@@ -102,11 +102,11 @@ Principi editoriali universali estratti dai testi di riferimento per la scrittur
 
 ## 9. Riscrittura come essenza (Zinsser, King)
 
-**Principio:** scrivere e riscrivere. La qualita emerge dalla revisione, non dalla prima stesura.
+**Principio:** scrivere è riscrivere. La qualità emerge dalla revisione, non dalla prima stesura.
 
-**Zinsser:** l'essenza della scrittura e la riscrittura.
+**Zinsser:** l'essenza della scrittura è la riscrittura.
 
-**King:** quando riscrivi, il tuo compito principale e togliere tutto cio che non e la storia. Formula: 2a bozza = 1a bozza - 10%.
+**King:** quando riscrivi, il tuo compito principale è togliere tutto ciò che non è la storia. Formula: 2a bozza = 1a bozza - 10%.
 
 **Per il reviewer:** dopo la prima revisione, suggerire una seconda lettura focalizzata sul taglio. Ogni capitolo dovrebbe poter perdere il 10% senza perdere contenuto.
 
@@ -116,15 +116,15 @@ Principi editoriali universali estratti dai testi di riferimento per la scrittur
 
 **Cosa verificare:**
 - Il testo assume conoscenze che il lettore potrebbe non avere?
-- Il testo spiega cose che il lettore gia sa? (condiscendente)
-- Il lettore sa sempre perche sta leggendo questo passaggio?
-- Ogni capitolo risponde alla domanda implicita del lettore: "Perche dovrebbe importarmi?"
+- Il testo spiega cose che il lettore già sa? (condiscendente)
+- Il lettore sa sempre perché sta leggendo questo passaggio?
+- Ogni capitolo risponde alla domanda implicita del lettore: "Perché dovrebbe importarmi?"
 
 ---
 
 ## Come usare questi principi
 
-**book-reviewer:** applicare come checklist aggiuntiva dopo i controlli grammaticali e di formato. Segnalare violazioni con riferimento al principio (es. "Principio 1: questa frase puo essere semplificata", "Principio 8: esempio troppo generico").
+**book-reviewer:** applicare come checklist aggiuntiva dopo i controlli grammaticali e di formato. Segnalare violazioni con riferimento al principio (es. "Principio 1: questa frase può essere semplificata", "Principio 8: esempio troppo generico").
 
 **book-challenger:** usare come base per le domande adversariali. Es. "Principio 6 — se dovessi ridurre questo capitolo a una sola lezione, quale sarebbe?" o "Principio 2 — mi stai raccontando che X funziona, ma non me lo stai mostrando."
 

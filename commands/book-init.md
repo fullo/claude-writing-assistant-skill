@@ -25,7 +25,7 @@ Se l'utente non specifica un valore, usare i default indicati. Se l'utente forni
 A livello serie (directory corrente):
 ```
 libri/
-├── cross-reference.md             ← mappa cross-reference (creato se non esiste e se c'e una serie)
+├── cross-reference.md             ← mappa cross-reference (creato se non esiste e se c'è una serie)
 └── $1/
     ├── capitoli/                  ← manuscript (LeanPub o altro)
     │   └── book.txt               ← elenco capitoli (vuoto, da compilare)
@@ -93,26 +93,26 @@ Thumbs.db
 ```
 
 ### cross-reference.md (livello serie)
-**Solo se l'utente ha specificato una serie.** Verificare se nella directory corrente esiste gia un file `cross-reference.md`. Se **non esiste**, crearlo con la struttura base seguendo il template della Parte 2 di `${CLAUDE_PLUGIN_ROOT}/skills/book-coherence/references/cross-reference.md`. Usare il nome della serie fornito dall'utente nel titolo (non hardcoded).
+**Solo se l'utente ha specificato una serie.** Verificare se nella directory corrente esiste già un file `cross-reference.md`. Se **non esiste**, crearlo con la struttura base seguendo il template della Parte 2 di `${CLAUDE_PLUGIN_ROOT}/skills/book-coherence/references/cross-reference.md`. Usare il nome della serie fornito dall'utente nel titolo (non hardcoded).
 
-Se **esiste gia**, aggiornare solo la lista "Volumi censiti" aggiungendo il nuovo volume $1.
+Se **esiste già**, aggiornare solo la lista "Volumi censiti" aggiungendo il nuovo volume $1.
 
 ## Inizializzazione Git
 
-Dopo aver creato tutti i file, verificare se `git` e disponibile nel sistema:
+Dopo aver creato tutti i file, verificare se `git` è disponibile nel sistema:
 
 ```bash
 which git
 ```
 
-**Se git e disponibile:**
+**Se git è disponibile:**
 1. Entrare nella directory del libro: `cd $1`
 2. Inizializzare il repository: `git init .`
 3. Fare il primo commit: `git add * && git commit -m "book-init: scaffolding progetto $1"`
-4. Comunicare all'utente che il repository e stato creato e che i comandi del plugin faranno commit automatici.
+4. Comunicare all'utente che il repository è stato creato e che i comandi del plugin faranno commit automatici.
 
 **Se git NON e disponibile:**
-1. Avvisare l'utente: "Git non e installato nel sistema. Il progetto e stato creato senza versionamento. I comandi del plugin non faranno commit automatici. Per abilitare il versionamento, installa git e poi esegui `git init .` nella directory del libro."
+1. Avvisare l'utente: "Git non è installato nel sistema. Il progetto è stato creato senza versionamento. I comandi del plugin non faranno commit automatici. Per abilitare il versionamento, installa git e poi esegui `git init .` nella directory del libro."
 2. Proseguire normalmente senza ulteriori riferimenti a git.
 
 ## Dopo la creazione

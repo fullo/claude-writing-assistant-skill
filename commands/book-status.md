@@ -12,7 +12,7 @@ La directory del libro è $ARGUMENTS (o la directory corrente se non specificata
 
 ```
 nome-libro/
-├── capitoli/          ← manuscript LeanPub, contiene book.txt
+├── capitoli/          ← manuscript (LeanPub o altra piattaforma), contiene book.txt
 ├── fonti/             ← fonti di riferimento, contiene fonti.md
 ├── assets/            ← immagini, esercizi, template
 ├── book-config.md     ← metadati del libro

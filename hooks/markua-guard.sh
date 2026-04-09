@@ -63,14 +63,19 @@ if [ -n "$BOOK_CONFIG_PATH" ]; then
 fi
 
 # File is relevant — output validation instructions for the LLM
-# Read book language from config if available
-LANG_LINE=""
+# Read book language from config to include in prompt
+BOOK_LANG=""
 if [ -n "$BOOK_CONFIG_PATH" ]; then
-  LANG_LINE=$(grep -i "Lingua:" "$BOOK_CONFIG_PATH" 2>/dev/null | head -1)
+  BOOK_LANG=$(grep -i "Lingua:" "$BOOK_CONFIG_PATH" 2>/dev/null | head -1 | sed 's/.*Lingua:[[:space:]]*//' | sed 's/\*//g' | xargs)
+fi
+
+if [ -n "$BOOK_LANG" ]; then
+  echo "This file is part of a Markua/LeanPub book project (language: ${BOOK_LANG}). Quick validation:"
+else
+  echo "This file is part of a Markua/LeanPub book project. Quick validation:"
 fi
 
 cat <<'PROMPT'
-This file is part of a Markua/LeanPub book project. Quick validation:
 
 1. Callouts use canonical labels: T> **Insight** / **Regola pratica** / **Approfondimento**, W> **Red Flag** (capital F), Q> **Domanda Socratica**
 2. No emoji in labels or titles
@@ -78,6 +83,5 @@ This file is part of a Markua/LeanPub book project. Quick validation:
 4. Dashes in titles/subtitles are em-dashes (—) not en-dashes (-)
 5. Quick Win uses {blurb, icon: trophy} with bold label (not ##)
 
-Note: read book-config.md for the book's language and respond accordingly.
-If violations found, briefly flag what to fix before proceeding.
+Respond in the book's language (from book-config.md). If violations found, briefly flag what to fix before proceeding.
 PROMPT

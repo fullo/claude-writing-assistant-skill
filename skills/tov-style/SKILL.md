@@ -6,14 +6,14 @@ description: >
   Also trigger when the user mentions proofreading text, checking formality level, or
   reviewing writing for publication readiness in any language.
   Attivare anche quando l'utente chiede di "rivedere il tono", "controllare lo stile",
-  "verificare la qualita della scrittura", "controllare la grammatica",
-  "valutare il capitolo", "review editoriale", "scorecard di qualita", "validare il TOV".
+  "verificare la qualità della scrittura", "controllare la grammatica",
+  "valutare il capitolo", "review editoriale", "scorecard di qualità", "validare il TOV".
 version: 2.0.0
 ---
 
 # TOV & Writing Style
 
-Skill di riferimento per tono di voce, stile narrativo, qualita linguistica e scorecard editoriale. Questa skill e language-aware: adatta i controlli alla lingua configurata nel progetto.
+Skill di riferimento per tono di voce, stile narrativo, qualità linguistica e scorecard editoriale. Questa skill è language-aware: adatta i controlli alla lingua configurata nel progetto.
 
 ## Configurazione lingua
 
@@ -34,16 +34,16 @@ Per lingue senza pack dedicato, il framework generico (`grammar-framework.md`) f
 
 ## Tono di voce
 
-Il tono e definito in `book-config.md` sezione **Stile e Tono**, campo **Tono target**. Se non specificato, il default e **conversazionale-esperto**: il tono di un collega senior che spiega qualcosa a un pari. Non un professore, non un guru, non un divulgatore che semplifica eccessivamente.
+Il tono è definito in `book-config.md` sezione **Stile e Tono**, campo **Tono target**. Se non specificato, il default è **conversazionale-esperto**: il tono di un collega senior che spiega qualcosa a un pari. Non un professore, non un guru, non un divulgatore che semplifica eccessivamente.
 
 **Caratteristiche del tono conversazionale-esperto (default):**
 
 - **Confidenziale ma competente** — espressioni colloquiali nei passaggi di transizione, mai nelle spiegazioni tecniche dove il registro resta preciso
-- **Auto-ironico quando appropriato** — ammettere limiti e un segno di competenza
+- **Auto-ironico quando appropriato** — ammettere limiti è un segno di competenza
 - **Diretto** — preferire parole concrete a perifrasi
-- **Mai condiscendente** — il lettore e un professionista
+- **Mai condiscendente** — il lettore è un professionista
 
-**Adattamento per lingua:** ogni lingua ha le proprie espressioni colloquiali e marcatori di familiarita. Usare quelli naturali della lingua target, non tradurre quelli di un'altra lingua.
+**Adattamento per lingua:** ogni lingua ha le proprie espressioni colloquiali e marcatori di familiarità. Usare quelli naturali della lingua target, non tradurre quelli di un'altra lingua.
 
 ### Benchmark quantitativi (target per capitolo, adattabili)
 
@@ -59,17 +59,17 @@ Questi benchmark vanno adattati alla lingua e al tono. In tono formale, i marcat
 
 ## Prosa narrativa, non elenchi
 
-Il libro e scritto in prosa continua. La tendenza a trasformare spiegazioni in elenchi puntati e il primo nemico della qualita.
+Il libro è scritto in prosa continua. La tendenza a trasformare spiegazioni in elenchi puntati è il primo nemico della qualità.
 
 **Elenchi ammessi:** checklist nei Checkpoint, step numerati nei processi, tabelle comparative, formattazione inline di framework di dominio.
 
 **Elenchi vietati:** spiegazioni di concetti, narrazioni, sequenze di esempi (max 2 in prosa per concetto), riassunti di fine sezione.
 
-Convertire sempre elenchi narrativi in prosa che spiega il "perche" di ogni punto.
+Convertire sempre elenchi narrativi in prosa che spiega il "perché" di ogni punto.
 
 ## Pattern narrativo obbligatorio per capitolo
 
-Il pattern e definito in `book-config.md` sezione **Stile e Tono**, campo **Pattern narrativo**. Se non specificato, il default e: **Esperienza → Problema → Soluzione → Esercizio**.
+Il pattern è definito in `book-config.md` sezione **Stile e Tono**, campo **Pattern narrativo**. Se non specificato, il default è: **Esperienza → Problema → Soluzione → Esercizio**.
 
 1. **Hook** — esperienza concreta dal caso studio con contesto temporale, numeri, dialoghi
 2. **Problema** — il caso rivela un pattern ricorrente, generalizzazione dall'esperienza al principio
@@ -95,8 +95,8 @@ I dialoghi tra personaggi del caso studio sono il principale veicolo del tono co
 Quando si scrive o si revisiona un libro:
 
 - **Modi di dire:** usare espressioni idiomatiche naturali della lingua target, non calchi da altre lingue
-- **Registro:** rispettare il livello di formalita definito in book-config.md (tu/Lei/Voi in italiano, du/Sie in tedesco, tu/vous in francese, etc.)
-- **Formati locali:** numeri, date, valute, unita di misura seguono le convenzioni della lingua/cultura target (vedi R6-class in grammar-framework.md)
+- **Registro:** rispettare il livello di formalità definito in book-config.md (tu/Lei/Voi in italiano, du/Sie in tedesco, tu/vous in francese, etc.)
+- **Formati locali:** numeri, date, valute, unità di misura seguono le convenzioni della lingua/cultura target (vedi R6-class in grammar-framework.md)
 - **Esempi e metafore:** devono essere comprensibili nella cultura target
 
 ## Gotchas
@@ -110,4 +110,4 @@ Quando si scrive o si revisiona un libro:
 Per il framework generico di regole (tutte le lingue): **`references/grammar-framework.md`**
 Per le regole specifiche per lingua: **`references/{lang}/grammar-rules.md`** (sostituire {lang} con il codice lingua)
 Per la style guide specifica per lingua: **`references/{lang}/style-guide.md`** (se esiste)
-Per la scorecard di qualita: **`references/scorecard.md`**
+Per la scorecard di qualità: **`references/scorecard.md`**

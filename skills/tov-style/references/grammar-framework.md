@@ -21,7 +21,7 @@ Framework generico per la validazione grammaticale e stilistica di libri tecnici
 - Alla prima occorrenza per capitolo: forma nella lingua primaria + originale in corsivo tra parentesi
 - Occorrenze successive: solo forma nella lingua primaria
 
-**Adattamento per lingua:** in inglese questa regola e meno rilevante (la maggior parte dei termini tecnici sono gia in inglese). Per lingue con forte tradizione di traduzione (francese, tedesco), applicare piu rigorosamente.
+**Adattamento per lingua:** in inglese questa regola è meno rilevante (la maggior parte dei termini tecnici sono già in inglese). Per lingue con forte tradizione di traduzione (francese, tedesco), applicare più rigorosamente.
 
 ## R2-class — Forme verbali idiomatiche
 
@@ -49,7 +49,7 @@ Framework generico per la validazione grammaticale e stilistica di libri tecnici
 - Declinazione/coniugazione corretta (per lingue con sistema dei casi)
 - Plurale dei prestiti: segue le regole della lingua target o della lingua di origine?
 
-**Nota:** non tutte le lingue hanno questa complessita. L'inglese non ha genere grammaticale; il tedesco ha tre generi; il giapponese non ha plurali.
+**Nota:** non tutte le lingue hanno questa complessità. L'inglese non ha genere grammaticale; il tedesco ha tre generi; il giapponese non ha plurali.
 
 ## R5-class — Determinanti (articoli, dimostrattivi)
 
@@ -70,7 +70,7 @@ Framework generico per la validazione grammaticale e stilistica di libri tecnici
 - Separatore migliaia: punto (it, de) vs virgola (en) vs spazio (fr)
 - Formato date: GG/MM/AAAA (it, fr) vs MM/DD/YYYY (en-US) vs DD.MM.YYYY (de)
 - Simbolo valuta: posizione prima/dopo il numero
-- Unita di misura: sistema metrico vs imperiale
+- Unità di misura: sistema metrico vs imperiale
 
 **Eccezioni:** codici, URL, nomi propri, formule mantengono il formato originale.
 
@@ -135,18 +135,18 @@ Framework generico per la validazione grammaticale e stilistica di libri tecnici
 
 ## R14-class — Formattazione elenchi lunghi
 
-**Scopo:** convertire elenchi inline troppo lunghi in bullet points per migliorare la leggibilita.
+**Scopo:** convertire elenchi inline troppo lunghi in bullet points per migliorare la leggibilità.
 
 **Cosa verificare:**
-- Elenchi con piu di 3-4 elementi con descrizioni estese vanno spezzati
-- Threshold puo variare per lingua (lingue piu concise tollerano elenchi inline piu lunghi)
+- Elenchi con più di 3-4 elementi con descrizioni estese vanno spezzati
+- Threshold può variare per lingua (lingue più concise tollerano elenchi inline più lunghi)
 
 ## R15-class — Contrazioni ed elisioni
 
 **Scopo:** applicare le contrazioni/elisioni standard della lingua scritta.
 
 **Cosa verificare:**
-- Italiano: elisioni standard (l'asse, un'analisi, com'e)
+- Italiano: elisioni standard (l'asse, un'analisi, com'è)
 - Inglese: contrazioni (don't, it's) in tono informale; evitare in tono formale
 - Francese: elisioni obbligatorie (l'homme, j'ai, c'est)
 - Tedesco: nessuna elisione standard nella scrittura formale
@@ -158,14 +158,14 @@ Framework generico per la validazione grammaticale e stilistica di libri tecnici
 ### Modi di dire e espressioni idiomatiche
 
 Quando il testo usa espressioni idiomatiche, verificare che:
-- L'espressione esiste realmente nella lingua target (non e un calco)
-- L'espressione e appropriata per il registro del libro
+- L'espressione esiste realmente nella lingua target (non è un calco)
+- L'espressione è appropriata per il registro del libro
 - Se il libro target ha un tono conversazionale, le espressioni colloquiali della lingua sono benvenute
-- Se il tono e formale, evitare colloquialismi anche se grammaticalmente corretti
+- Se il tono è formale, evitare colloquialismi anche se grammaticalmente corretti
 
-### Registro e formalita
+### Registro e formalità
 
-I livelli di formalita variano per lingua e cultura:
+I livelli di formalità variano per lingua e cultura:
 - **Pronomi di cortesia:** tu/Lei/Voi (it), du/Sie (de), tu/vous (fr), tu/usted (es), you (en — neutro)
 - **Scrittura tecnica:** ogni lingua ha una convenzione prevalente. Leggere book-config.md sezione Stile e Tono per il registro scelto
 
@@ -173,7 +173,7 @@ I livelli di formalita variano per lingua e cultura:
 
 - Esempi e metafore devono essere comprensibili nella cultura target
 - Riferimenti sportivi, culinari o storici specifici di una cultura vanno adattati
-- Unita di misura, valute e riferimenti temporali seguono le convenzioni locali
+- Unità di misura, valute e riferimenti temporali seguono le convenzioni locali
 
 ---
 
@@ -190,8 +190,8 @@ Per ogni violazione trovata:
 Al termine:
 
 ```
-PUNTEGGIO DI CONFORMITA: __/100
-CATEGORIE PIU VIOLATE: R#-class, R#-class, R#-class
+PUNTEGGIO DI CONFORMITÀ: __/100
+CATEGORIE PIÙ VIOLATE: R#-class, R#-class, R#-class
 RIEPILOGO: __ violazioni trovate su __ categorie diverse.
 ```
 
