@@ -1,5 +1,5 @@
 {
-  "description": "Markua/LeanPub formatting validation hook for manuscript files. Skips non-book projects via shell pre-filter.",
+  "description": "Book formatting validation hook for manuscript files. Checks platform from book-config.md; applies Markua rules only for LeanPub projects. Skips non-book projects via shell pre-filter.",
   "hooks": {
     "PreToolUse": [
       {

@@ -13,5 +13,20 @@
     "name": "detect-condescending-tone",
     "prompt": "Review this paragraph for tone of voice: 'Come sicuramente saprai, gli OKR sono uno strumento molto semplice che tutti possono capire facilmente. Basta seguire queste poche regole elementari.'",
     "expected_behavior": "Should flag the condescending tone: 'come sicuramente saprai' is patronizing, 'molto semplice' and 'elementari' underestimate the reader. The target reader is a professional — the tone should be peer-to-peer, not teacher-to-student."
+  },
+  {
+    "name": "detect-language-from-config",
+    "prompt": "Given a book-config.md with 'Lingua: english', review this sentence: 'The team should of deployed the new feature.' Which grammar rules should be applied?",
+    "expected_behavior": "Should detect the language is English from book-config.md, load en/grammar-rules.md, and flag 'should of' as incorrect (should be 'should have'). Should NOT apply Italian grammar rules."
+  },
+  {
+    "name": "apply-english-grammar-rules",
+    "prompt": "Review this English sentence for style: 'In order to facilitate the implementation of the aforementioned solution, it is necessary to utilize the dashboard.'",
+    "expected_behavior": "Should flag verbose writing per R7 (concise writing): 'In order to' → 'To', 'facilitate the implementation of' → 'implement', 'aforementioned' → remove, 'it is necessary to utilize' → 'use'. Should apply English grammar rules, not Italian."
+  },
+  {
+    "name": "fallback-to-default-italian",
+    "prompt": "Review this sentence for style. No book-config.md exists in the project: 'Dobbiamo fixare il bug prima del deploy.'",
+    "expected_behavior": "Should default to Italian (no book-config.md found) and flag 'fixare' as a forbidden anglicism (use 'correggere'). Should note that 'deploy' may be acceptable as an established tech term."
   }
 ]

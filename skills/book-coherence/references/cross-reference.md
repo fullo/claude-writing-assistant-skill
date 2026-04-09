@@ -1,6 +1,6 @@
 # Cross-Reference della Serie — Regole e Mappa
 
-Questo file è il **riferimento unico a livello serie** per gestire i rimandi incrociati tra i volumi della collana "the Right Way". Vive nella root della serie (es. `libri/cross-reference.md`) ed è condiviso da tutti i libri.
+Questo file e il **riferimento unico a livello serie** per gestire i rimandi incrociati tra i volumi di una collana. Vive nella root della serie (es. `libri/cross-reference.md`) ed è condiviso da tutti i libri.
 
 Ha due scopi:
 

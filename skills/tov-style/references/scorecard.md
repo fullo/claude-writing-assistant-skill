@@ -49,14 +49,19 @@ Assegnare un punteggio 0–10 per ogni dimensione. Obiettivo: ≥ 60/70 per ogni
 - [ ] Sentence case su tutti i titoli
 - [ ] Conformità Markua verificata
 
-### Serie "the Right Way"
+### Serie (se configurata in book-config.md)
 - [ ] Riferimenti ad altri volumi come approfondimento opzionale (mai prerequisito)
 - [ ] Terminologia coerente tra volumi dove i concetti si sovrappongono
-- [ ] Callout senza emoji in tutti i libri; label standard
+- [ ] Convenzioni di formattazione identiche tra tutti i libri della serie
 
-## Validazione stilistica italiana
+## Validazione grammaticale e stilistica
 
-Dopo la scorecard, eseguire la validazione con le 15 regole di `references/italian-rules.md`.
+Dopo la scorecard, eseguire la validazione con le regole grammaticali appropriate per la lingua del libro:
+
+1. Leggere `book-config.md` campo **Lingua**
+2. Caricare `references/{lang}/grammar-rules.md` (es. `it/grammar-rules.md` per italiano, `en/grammar-rules.md` per inglese)
+3. Se non esiste un language pack specifico, usare `references/grammar-framework.md` per generare check appropriati
+4. Applicare le regole e produrre il report
 
 Formato di output:
 
@@ -66,8 +71,8 @@ Formato di output:
 ```
 
 ```
-PUNTEGGIO DI CONFORMITÀ: __/100
-REGOLE PIÙ VIOLATE: R__, R__, R__
+PUNTEGGIO DI CONFORMITA: __/100
+REGOLE PIU VIOLATE: R__, R__, R__
 RIEPILOGO: __ violazioni trovate su __ regole diverse.
 ```
 

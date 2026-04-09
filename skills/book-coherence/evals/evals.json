@@ -13,5 +13,10 @@
     "name": "detect-character-role-change",
     "prompt": "In Chapter 2, Marco is introduced as CTO. In Chapter 8, Marco is referred to as VP Engineering without any explanation of a role change. Check character consistency.",
     "expected_behavior": "Should detect the unexplained role change for Marco between chapters and flag it as a coherence issue requiring either correction or narrative justification."
+  },
+  {
+    "name": "config-driven-coherence",
+    "prompt": "A book-config.md defines the series as 'Product Leadership' (not 'the Right Way') and the language as English. Run a coherence check on a chapter that says '(see Chapter 3)' for OKR guidance.",
+    "expected_behavior": "Should read book-config.md for series name and language, use those values in the report (not hardcoded 'the Right Way'), and verify the cross-reference in English format. Should not assume Italian language or any specific series name."
   }
 ]

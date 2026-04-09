@@ -10,11 +10,21 @@ Questo file va creato nella root di ogni progetto libro come `book-config.md`. I
 ## Metadati
 
 - **Titolo completo:** [titolo]
-- **Serie:** the Right Way
-- **Autore:** Francesco Fullone — Daruma Consulting
+- **Serie:** [nome della serie, se applicabile]
+- **Autore:** [nome autore]
 - **Stato:** bozza | revisione | pronto
-- **Lingua:** italiano
-- **Piattaforma:** LeanPub (Markua)
+- **Lingua:** [codice lingua: italiano, english, espanol, francais, deutsch, ...]
+- **Piattaforma:** [LeanPub (Markua) | GitBook | Markdown generico | altro]
+
+## Stile e Tono
+
+- **Tono target:** [es. conversazionale-esperto, accademico, divulgativo, tecnico-formale]
+- **Registro:** [es. informale (tu), formale (Lei/Voi), neutro (impersonale)]
+- **Pattern narrativo:** [es. Esperienza → Problema → Soluzione → Esercizio]
+- **Rapporto teoria/pratica:** [es. 30/70]
+- **Termini vietati:** [lista di termini/espressioni da evitare, specifici per lingua e progetto]
+- **Termini tecnici da non tradurre:** [elenco: OKR, KPI, ...]
+- **Note stilistiche aggiuntive:** [convenzioni specifiche del progetto]
 
 ## Struttura
 
@@ -87,7 +97,10 @@ Questo file va creato nella root di ogni progetto libro come `book-config.md`. I
 
 ## Note sull'uso
 
-- Il file viene creato da `/init-book` con struttura vuota da compilare
-- Il file viene letto da `/check-coherence` per verificare automaticamente timeline, personaggi, numeri, terminologia
+- Il file viene creato da `/book-init` con struttura da compilare. I campi Lingua e Piattaforma determinano quali regole grammaticali e di formattazione il plugin applica.
+- Il file viene letto da `/book-coherence` per verificare automaticamente timeline, personaggi, numeri, terminologia
 - Il file viene consultato dall'agent `book-reviewer` durante gli audit completi
 - Le sezioni possono essere aggiornate incrementalmente man mano che il libro cresce
+- **Lingua** determina il language pack caricato per le regole grammaticali (default: italiano)
+- **Piattaforma** determina le regole di formattazione applicate (default: LeanPub/Markua)
+- **Stile e Tono** permette di personalizzare il tono editoriale; se omesso, il plugin usa i default

@@ -11,7 +11,12 @@
   },
   {
     "name": "detect-emoji-in-callout",
-    "prompt": "Check this callout:\n\nT> **💡 Insight**\nT>\nT> This is an important point.\n\nIs this valid Markua?",
-    "expected_behavior": "Should flag the emoji in the callout label. Markua callout labels must not contain emoji — the correct format is T> **Insight** without any emoji."
+    "prompt": "Check this callout:\n\nT> **\ud83d\udca1 Insight**\nT>\nT> This is an important point.\n\nIs this valid Markua?",
+    "expected_behavior": "Should flag the emoji in the callout label. Markua callout labels must not contain emoji \u2014 the correct format is T> **Insight** without any emoji."
+  },
+  {
+    "name": "skip-markua-for-non-leanpub",
+    "prompt": "A book-config.md specifies 'Piattaforma: GitBook'. The user runs /book-markua on a chapter file. What should happen?",
+    "expected_behavior": "Should detect that the platform is GitBook (not LeanPub/Markua) and inform the user that detailed Markua validation rules do not apply to this project. Should offer generic Markdown best practices instead."
   }
 ]

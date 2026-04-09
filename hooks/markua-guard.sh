@@ -3,6 +3,8 @@
 # Exits silently (code 0) if the file is NOT a Markua/manuscript file,
 # avoiding unnecessary LLM prompt evaluation on non-book projects.
 #
+# Also exits silently if the book project uses a non-Markua platform.
+#
 # When the file IS relevant, outputs validation instructions for the LLM.
 
 # The tool input is passed via stdin as JSON
@@ -31,9 +33,13 @@ fi
 # Walk up from the file to find project root indicators
 DIR=$(dirname "$FILE_PATH")
 HAS_BOOK_MARKER=false
+BOOK_CONFIG_PATH=""
 while [ "$DIR" != "/" ] && [ "$DIR" != "." ]; do
   if [ -f "$DIR/Book.txt" ] || [ -f "$DIR/book-config.md" ] || [ -f "$DIR/manuscript/Book.txt" ]; then
     HAS_BOOK_MARKER=true
+    if [ -f "$DIR/book-config.md" ]; then
+      BOOK_CONFIG_PATH="$DIR/book-config.md"
+    fi
     break
   fi
   DIR=$(dirname "$DIR")
@@ -44,15 +50,34 @@ if [ "$IS_MANUSCRIPT" = false ] && [ "$HAS_BOOK_MARKER" = false ]; then
   exit 0
 fi
 
+# Check 4: If book-config.md exists, verify the platform is LeanPub/Markua
+if [ -n "$BOOK_CONFIG_PATH" ]; then
+  PLATFORM=$(grep -i "Piattaforma:" "$BOOK_CONFIG_PATH" 2>/dev/null | head -1)
+  if [ -n "$PLATFORM" ]; then
+    if ! echo "$PLATFORM" | grep -qi "markua\|leanpub"; then
+      # Platform is not Markua/LeanPub — skip Markua validation
+      exit 0
+    fi
+  fi
+  # If Piattaforma not found, default to Markua validation
+fi
+
 # File is relevant — output validation instructions for the LLM
+# Read book language from config if available
+LANG_LINE=""
+if [ -n "$BOOK_CONFIG_PATH" ]; then
+  LANG_LINE=$(grep -i "Lingua:" "$BOOK_CONFIG_PATH" 2>/dev/null | head -1)
+fi
+
 cat <<'PROMPT'
-Questo file è parte di un progetto libro Markua/LeanPub. Verifica rapidamente:
+This file is part of a Markua/LeanPub book project. Quick validation:
 
-1. I callout usano le label canoniche: T> **Insight** / **Regola pratica** / **Approfondimento**, W> **Red Flag** (F maiuscola), Q> **Domanda Socratica**
-2. Nessuna emoji nelle label o nei titoli
-3. I titoli sono in sentence case
-4. I trattini nei titoli/sottotitoli sono trattini lunghi (—) non corti (-)
-5. I Quick Win sono in {blurb, icon: trophy} con label bold (non ##)
+1. Callouts use canonical labels: T> **Insight** / **Regola pratica** / **Approfondimento**, W> **Red Flag** (capital F), Q> **Domanda Socratica**
+2. No emoji in labels or titles
+3. Titles use sentence case
+4. Dashes in titles/subtitles are em-dashes (—) not en-dashes (-)
+5. Quick Win uses {blurb, icon: trophy} with bold label (not ##)
 
-Se trovi violazioni, segnala brevemente cosa correggere prima di procedere.
+Note: read book-config.md for the book's language and respond accordingly.
+If violations found, briefly flag what to fix before proceeding.
 PROMPT

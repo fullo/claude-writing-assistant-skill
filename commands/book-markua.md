@@ -6,6 +6,8 @@ argument-hint: [file.md o directory manuscript/]
 
 Valida il formato Markua del file o della directory indicata in $ARGUMENTS.
 
+**Prerequisito piattaforma:** leggere `book-config.md` nella root del progetto. Se il campo `Piattaforma` e diverso da `LeanPub (Markua)`, informare l'utente: "Questo comando e specifico per il formato Markua/LeanPub. Il progetto usa [piattaforma]. Le regole Markua non si applicano." Se `book-config.md` non esiste o non specifica la piattaforma, procedere con la validazione Markua (default).
+
 Prima leggere: `${CLAUDE_PLUGIN_ROOT}/skills/markua-leanpub/SKILL.md` e `${CLAUDE_PLUGIN_ROOT}/skills/markua-leanpub/references/markua-rules.md`.
 
 Se $ARGUMENTS è un singolo file .md, validare quel file.

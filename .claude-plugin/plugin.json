@@ -1,6 +1,6 @@
 {
   "name": "writing-assistant",
-  "description": "Editorial assistant for book writing — Italian TOV/style checking, Markua/LeanPub formatting, multi-book coherence validation, and narrative consistency.",
+  "description": "Editorial assistant for book writing — language-aware TOV/style checking, format validation, multi-book coherence, and optional adversarial editorial challenge with Chain-of-Verification.",
   "author": {
     "name": "Francesco Fullone — Daruma Consulting"
   }

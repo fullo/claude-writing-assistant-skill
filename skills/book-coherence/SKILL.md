@@ -13,7 +13,7 @@ version: 1.0.0
 
 # Coerenza Narrativa — Intra-libro e Inter-libro
 
-Skill per verificare la coerenza interna di un libro e la coerenza tra libri diversi della serie "the Right Way". Opera su due livelli: capitolo-vs-capitolo e libro-vs-libro.
+Skill per verificare la coerenza interna di un libro e la coerenza tra libri diversi di una serie. Opera su due livelli: capitolo-vs-capitolo e libro-vs-libro. Leggere `book-config.md` per determinare serie, lingua, piattaforma e struttura del progetto.
 
 ## Livello 1: Coerenza intra-libro (tra capitoli)
 
@@ -87,7 +87,7 @@ Se i volumi condividono personaggi o aziende (es. Karma Inc.), verificare coeren
 
 ### Callout e formattazione
 
-Tutti i libri della serie devono usare le stesse label per i callout, senza emoji, con gli stessi formati canonici.
+Tutti i libri della serie devono usare le stesse label per i callout e gli stessi formati canonici (verificare le convenzioni di formattazione in `book-config.md` e nella skill di formato appropriata per la piattaforma).
 
 ## Struttura progetto attesa
 
@@ -95,7 +95,7 @@ Tutti i libri della serie devono usare le stesse label per i callout, senza emoj
 libri/                             ← root della serie
 ├── cross-reference.md             ← mappa cross-reference inter-libro (livello serie)
 ├── nome-libro/
-│   ├── capitoli/                  ← manuscript LeanPub, contiene book.txt e i .md
+│   ├── capitoli/                  ← manuscript (LeanPub o altra piattaforma), contiene book.txt e i .md
 │   ├── fonti/                     ← fonti di riferimento
 │   ├── assets/                    ← immagini, esercizi, template
 │   └── book-config.md             ← metadati: personaggi, timeline, framework, terminologia

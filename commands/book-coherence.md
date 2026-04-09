@@ -20,7 +20,7 @@ Prima leggere:
 libri/                             ← root serie
 ├── cross-reference.md             ← mappa cross-reference (livello serie, generato)
 ├── nome-libro/
-│   ├── capitoli/                  ← manuscript LeanPub, contiene book.txt e i .md
+│   ├── capitoli/                  ← manuscript (LeanPub o altra piattaforma), contiene book.txt e i .md
 │   ├── fonti/
 │   ├── assets/
 │   └── book-config.md             ← metadati: personaggi, timeline, terminologia
