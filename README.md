@@ -79,7 +79,17 @@ These agents are detected automatically. Without the plugin, they use a lightwei
 
 ## Installation
 
-### As Claude Code plugin
+### From marketplace (recommended)
+
+```bash
+# Add the marketplace (once)
+claude plugin marketplace add fullo/claude-plugins-marketplace
+
+# Install the plugin
+claude plugin install writing-assistant@fullo-plugins
+```
+
+### From GitHub
 
 ```bash
 git clone https://github.com/fullo/claude-writing-assistant-skill.git
@@ -92,6 +102,14 @@ claude plugin add /path/to/claude-writing-assistant-skill
 git clone https://github.com/fullo/claude-writing-assistant-skill.git
 cp -r claude-writing-assistant-skill/skills/* .claude/skills/
 ```
+
+## Update
+
+```bash
+claude plugin update writing-assistant@fullo-plugins
+```
+
+The plugin system uses git commit hashes as versions. There is no automatic update notification: run the command above periodically to stay current.
 
 ## Structure
 
