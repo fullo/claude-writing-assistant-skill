@@ -8,7 +8,7 @@ description: >
   Attivare anche quando l'utente chiede di "rivedere il tono", "controllare lo stile",
   "verificare la qualità della scrittura", "controllare la grammatica",
   "valutare il capitolo", "review editoriale", "scorecard di qualità", "validare il TOV".
-version: 2.0.0
+version: 2.0.1
 ---
 
 # TOV & Writing Style

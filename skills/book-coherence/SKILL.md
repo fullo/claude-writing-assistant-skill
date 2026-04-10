@@ -8,7 +8,7 @@ description: >
   Attivare anche quando l'utente chiede di "controllare la coerenza", "verificare la continuità
   narrativa", "controllare i numeri del caso studio", "cross-check tra capitoli",
   "verificare la timeline", "confrontare con l'altro libro", "verificare terminologia tra libri".
-version: 1.0.0
+version: 2.0.1
 ---
 
 # Coerenza Narrativa — Intra-libro e Inter-libro

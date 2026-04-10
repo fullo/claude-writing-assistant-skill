@@ -1,6 +1,7 @@
 {
   "name": "writing-assistant",
   "description": "Editorial assistant for book writing — language-aware TOV/style checking, format validation, multi-book coherence, and optional adversarial editorial challenge with Chain-of-Verification.",
+  "version": "2.0.1",
   "author": {
     "name": "Francesco Fullone — Daruma Consulting"
   }

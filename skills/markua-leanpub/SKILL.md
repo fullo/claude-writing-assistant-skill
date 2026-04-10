@@ -8,7 +8,7 @@ description: >
   Attivare anche quando l'utente chiede di "verificare il formato Markua", "controllare la
   formattazione LeanPub", "validare i callout", "controllare i pagebreak", "audit Markua",
   "formattare il capitolo", "fix formatting", "check blurb".
-version: 1.0.0
+version: 2.0.1
 ---
 
 # Formato Markua — Regole di Formattazione LeanPub
