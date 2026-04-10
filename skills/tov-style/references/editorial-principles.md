@@ -50,7 +50,7 @@ Principi editoriali universali estratti dai testi di riferimento per la scrittur
 - Il testo suona come una persona reale che parla, non come un comitato?
 - I passaggi "generici" (che potrebbe aver scritto chiunque) sono pochi?
 
-**Zinsser:** chiarità, semplicità, brevità e umanità. L'umanità è il quarto pilastro — il lettore deve sentire una persona dietro le parole.
+**Zinsser:** chiarezza, semplicità, brevità e umanità. L'umanità è il quarto pilastro — il lettore deve sentire una persona dietro le parole.
 
 ## 5. Struttura in tre atti (universale)
 
@@ -88,7 +88,7 @@ Principi editoriali universali estratti dai testi di riferimento per la scrittur
 
 **Per libri tecnici:** i dialoghi tra personaggi del caso studio sono il veicolo principale per rendere viva la teoria.
 
-## 8. Specificita e concretezza (Zinsser, Strunk & White)
+## 8. Specificità e concretezza (Zinsser, Strunk & White)
 
 **Principio:** i lettori si identificano con le persone, non con le astrazioni. Essere specifici.
 

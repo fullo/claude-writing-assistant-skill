@@ -111,7 +111,7 @@ which git
 3. Fare il primo commit: `git add * && git commit -m "book-init: scaffolding progetto $1"`
 4. Comunicare all'utente che il repository è stato creato e che i comandi del plugin faranno commit automatici.
 
-**Se git NON e disponibile:**
+**Se git NON è disponibile:**
 1. Avvisare l'utente: "Git non è installato nel sistema. Il progetto è stato creato senza versionamento. I comandi del plugin non faranno commit automatici. Per abilitare il versionamento, installa git e poi esegui `git init .` nella directory del libro."
 2. Proseguire normalmente senza ulteriori riferimenti a git.
 
